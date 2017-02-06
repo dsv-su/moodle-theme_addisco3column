@@ -1,0 +1,14 @@
+
+
+.side-post-only #page-content #region-post {
+	 width: 230px;
+}
+
+.side-post-only #page-content #region-post-box {
+    margin-left: -230px;
+}
+
+.side-post-only #page-content #region-main {
+    margin-left: 230px;
+}
+
