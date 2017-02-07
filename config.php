@@ -12,7 +12,8 @@ $THEME->sheets = array(
     'blocks',
     'course',
     'dock',
-    'pagelayout', 
+    'pagelayout',
+    'messaging',
     //use for two column layouts
     'forum'
 );
