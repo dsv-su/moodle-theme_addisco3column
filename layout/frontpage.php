@@ -71,44 +71,7 @@ echo $OUTPUT->doctype() ?>
 <?php } ?>
 <!-- end of menu -->
 
-<?php if (isloggedin()) { ?>			
-<a id="downer" href="javascript:toggle5('downer-info');"><?php p(get_string('more')); ?></a>		
-		
-<div id="downer-info">
- 				<?php if (isloggedin()) {
-				echo html_writer::tag('div', $OUTPUT->user_picture($USER, array('size'=>80)), array('class'=>'userimg'));
-				} else { ?>
-				<div class="userimg">
-				<img src="<?php echo $OUTPUT->pix_url('user1', 'theme'); ?>"  />
-				</div>
-			<?php	} ?>
-
-				<div class="headermenu">
-        		<?php
-	        	    echo $OUTPUT->login_info();
-    	        	echo $OUTPUT->lang_menu();
-	        	    echo $PAGE->headingmenu;
-		        ?>	    
-				</div>
-				
-				<div id="downer-options">
-				
-		<a href="<?php p($CFG->wwwroot) ?>/user/profile.php"><?php p(get_string('myprofile')); ?></a>
-		
-				</div>
-				
-</div>
-<?php } else { ?>
-
-<a id="downer" href="javascript:toggle5('downer-info');"><?php p(get_string('login')); ?></a>	
-
-<div id="downer-info">
- 	<div id="dlogin">
- 	<form action="<?php p($CFG->wwwroot) ?>/login/index.php" method="post" id="login" class="loginform"><div class="c1 fld username"><label for="login_username"><?php p(get_string('username')); ?></label><input type="text" value="admin" id="login_username" name="username"></div><div class="c1 fld password"><label for="login_password"><?php p(get_string('password')); ?></label><input type="password" value="" id="login_password" name="password"></div><div class="c1 btn"><input type="submit" value="<?php p(get_string('login')); ?>"></div></form>
- 	</div>			
-</div>
-
-<?php } ?>				
+<?php echo $OUTPUT->user_menu(); ?>
 
 </div></div>		
 </div>
