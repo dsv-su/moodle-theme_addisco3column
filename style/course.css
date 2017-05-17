@@ -7,6 +7,10 @@ ul.topics, ul.weeks {
 	margin: 0px;
 }
 
+.format-onetopic .course-content .tabtree li {
+	display: inline-flex !important;
+}
+
 .course-content ul.topics li.section {
 	float: none;
 }
