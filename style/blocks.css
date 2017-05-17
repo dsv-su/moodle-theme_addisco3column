@@ -1,3 +1,11 @@
+#page-content #region-main-box .region-content {
+	padding: 0px !important;
+}
+
+.block_adminblock .content {
+	margin: 0px;
+	padding: 3px 15px !important;
+}
 
 .block {
 	border: 1px solid #acb0af;
