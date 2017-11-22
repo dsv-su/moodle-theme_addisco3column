@@ -2,7 +2,7 @@
 
 $THEME->name = 'addisco3column';
 
-$THEME->parents = array('canvas','base');
+$THEME->parents = array('canvas','base', 'bootstrapbase');
 //$THEME->parents_exclude_sheets = array('base'=>array('pagelayout'),'canvas'=>array('pagelayout') );
 
 //below are our theme's css sheets
